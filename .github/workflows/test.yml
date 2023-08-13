@@ -15,4 +15,7 @@ jobs:
     permissions: write-all
 
     steps:
-      - uses: matteo4diani/poetry-semantic-release@v1.0.0
+      - uses: matteo4diani/poetry-semantic-release@v1.0.1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          pypi-token: ${{ secrets.PYPI_TOKEN }}
