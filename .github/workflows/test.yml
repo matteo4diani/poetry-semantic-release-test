@@ -1,4 +1,4 @@
-name: Test python-semantic-release
+name: Test python-semantic-release Action
 
 on:
   push:
