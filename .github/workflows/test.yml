@@ -1,4 +1,4 @@
-name: CI
+name: Test python-semantic-release
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
 
 
 jobs:
-  Release:
+  Test:
     runs-on: ubuntu-latest
     concurrency: release
     permissions: write-all
