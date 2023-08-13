@@ -15,4 +15,4 @@ jobs:
     permissions: write-all
 
     steps:
-      - uses: matteo4diani/poetry-semantic-release
+      - uses: matteo4diani/poetry-semantic-release@v1
