@@ -2,6 +2,41 @@
 
 
 
+## v0.1.1 (2023-08-13)
+
+### Ci
+
+* ci: evaluate action against main branch ([`ab2bbde`](https://github.com/matteo4diani/poetry-semantic-release-test/commit/ab2bbde8a2a29ff45a042eaefd429d9116e199eb))
+
+* ci: pull main ([`1bb37d8`](https://github.com/matteo4diani/poetry-semantic-release-test/commit/1bb37d8b26845d3361155ed24a9c628df35f0514))
+
+* ci: add check on release ([`f949c3f`](https://github.com/matteo4diani/poetry-semantic-release-test/commit/f949c3f590287b109fedd950c85ee812c155988b))
+
+* ci: add test commit in ci to always trigger release ([`c30e640`](https://github.com/matteo4diani/poetry-semantic-release-test/commit/c30e640aced99b79979063e5b9cefc6d1ef33134))
+
+* ci: dispatch release workflow on succesful test from github.ref == main ([`1e9e8d9`](https://github.com/matteo4diani/poetry-semantic-release-test/commit/1e9e8d93ea0db54f75bfb8164c02de5a316ba1c6))
+
+* ci: run only on workflow dispatch ([`336fc82`](https://github.com/matteo4diani/poetry-semantic-release-test/commit/336fc82c1a87dd21a3a41b7340bb0312882c0477))
+
+### Fix
+
+* fix: 🐰 Oh my fur and whiskers! I&#39;m late, I&#39;m late, I&#39;m late! 🐇 ([`d74165a`](https://github.com/matteo4diani/poetry-semantic-release-test/commit/d74165a97b02db405ca05a70d3c9ebde25e4eaa6))
+
+* fix: 🐰 Oh my fur and whiskers! I&#39;m late, I&#39;m late, I&#39;m late! 🐇 ([`d3049c6`](https://github.com/matteo4diani/poetry-semantic-release-test/commit/d3049c6cd490760b44f512548097d2ca0bfd21b6))
+
+* fix: 🐰 Oh my fur and whiskers! I&#39;m late, I&#39;m late, I&#39;m late! 🐇 ([`e9d7099`](https://github.com/matteo4diani/poetry-semantic-release-test/commit/e9d70992a5e865053d603c93a6b9a4644dfd3ac5))
+
+* fix: 🐰 Oh my fur and whiskers! I&#39;m late, I&#39;m late, I&#39;m late! 🐇 ([`6d000fc`](https://github.com/matteo4diani/poetry-semantic-release-test/commit/6d000fc4cbee2decbfb2e4ff2169a26be23d2175))
+
+* fix: 🐰 Oh my fur and whiskers! I&#39;m late, I&#39;m late, I&#39;m late! 🐇 ([`adbd6cb`](https://github.com/matteo4diani/poetry-semantic-release-test/commit/adbd6cb09093eb09277e3d8f1a35515c0eb1f500))
+
+* fix: 🐰 Oh my fur and whiskers! I&#39;m late, I&#39;m late, I&#39;m late! 🐇 ([`ac4219f`](https://github.com/matteo4diani/poetry-semantic-release-test/commit/ac4219faf80e99e815bdb444ecd16f525ffc68c9))
+
+* fix: 🐰 Oh my fur and whiskers! I&#39;m late, I&#39;m late, I&#39;m late! 🐇 ([`abb8d35`](https://github.com/matteo4diani/poetry-semantic-release-test/commit/abb8d350061c08ab4918c29988af76a4f2e2c1d9))
+
+* fix: 🐰 Oh my fur and whiskers! I&#39;m late, I&#39;m late, I&#39;m late! 🐇 ([`1874dd2`](https://github.com/matteo4diani/poetry-semantic-release-test/commit/1874dd2559ebce5ccec68cc12e12f6eb53936074))
+
+
 ## v0.1.0 (2023-08-13)
 
 ### Ci
