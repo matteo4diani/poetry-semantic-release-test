@@ -2,6 +2,13 @@
 
 
 
+## v0.1.2 (2023-08-13)
+
+### Fix
+
+* fix: 🐰 Oh my fur and whiskers! I&#39;m late, I&#39;m late, I&#39;m late! 🐇 ([`407b6ee`](https://github.com/matteo4diani/poetry-semantic-release-test/commit/407b6ee48e68b3211c18744528950c4862527b17))
+
+
 ## v0.1.1 (2023-08-13)
 
 ### Ci
