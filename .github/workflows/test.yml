@@ -29,13 +29,16 @@ jobs:
     steps:
       - uses: matteo4diani/poetry-semantic-release@v0
         name: Test Semantic Release
+        id: test-release
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           pypi-token: ${{ secrets.PYPI_TOKEN }}
+    outputs:
+      released: ${{ steps.test-release.outputs.released }}
 
   Dispatch:
     needs: Test
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' && needs.Test.outputs.released
     permissions: write-all
     runs-on: ubuntu-latest
     concurrency: release
