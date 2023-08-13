@@ -11,9 +11,8 @@ jobs:
   Release:
     runs-on: ubuntu-latest
     concurrency: release
-    permissions:
-      id-token: write
-      contents: write
+    permissions: write-all
+
 
     steps:
-      - uses: actions/poetry-semantic-release@v0.1.1
+      - uses: actions/poetry-semantic-release@v0
