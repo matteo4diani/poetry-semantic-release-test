@@ -4,7 +4,25 @@ on:
   workflow_dispatch:
 
 jobs:
+  Commit:
+    runs-on: ubuntu-latest
+    permissions: write-all
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup test commit
+        shell: bash
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          date > time.txt
+          git add time.txt
+          git commit -m "fix: 🐰 Oh my fur and whiskers! I'm late, I'm late, I'm late! 🐇"
+          git push origin main
+          
   Test:
+    needs: Commit
     runs-on: ubuntu-latest
     permissions: write-all
 
