@@ -3,15 +3,33 @@ name: Test Action
 on:
   workflow_dispatch:
 
-
 jobs:
   Test:
     runs-on: ubuntu-latest
-    concurrency: release
     permissions: write-all
 
     steps:
       - uses: matteo4diani/poetry-semantic-release@v0
+        name: Test Semantic Release
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           pypi-token: ${{ secrets.PYPI_TOKEN }}
+
+  Dispatch:
+    needs: Test
+    if: github.ref == 'refs/heads/main'
+    permissions: write-all
+    runs-on: ubuntu-latest
+    concurrency: release
+    steps:
+      - uses: actions/github-script@v6
+        name: Dispatch Release
+        with:
+          github-token: ${{ secrets.PAT_TOKEN }}
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: 'matteo4diani',
+              repo: 'poetry-semantic-release',
+              workflow_id: 'release.yml',
+              ref: 'main'
+            })
