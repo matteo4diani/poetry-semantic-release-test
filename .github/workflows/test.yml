@@ -28,7 +28,7 @@ jobs:
     permissions: write-all
 
     steps:
-      - uses: matteo4diani/poetry-semantic-release@v0
+      - uses: matteo4diani/poetry-semantic-release@main
         name: Test Semantic Release
         id: test-release
         with:
@@ -39,7 +39,7 @@ jobs:
 
   Dispatch:
     needs: Test
-    if: github.ref == 'refs/heads/main' && needs.Test.outputs.released
+    if: github.ref == 'refs/heads/main' && needs.Test.outputs.released == 'true'
     permissions: write-all
     runs-on: ubuntu-latest
     concurrency: release
